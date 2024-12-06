@@ -46,7 +46,7 @@ const onBlockAddedSubscriptionToken = blockAndLogStreamer.subscribeToOnBlockAdde
 const onLogAddedSubscriptionToken = blockAndLogStreamer.subscribeToOnLogAdded(log => console.log(log));
 const onBlockRemovedSubscriptionToken = blockAndLogStreamer.subscribeToOnBlockRemoved(block => console.log(block));
 const onLogRemovedSubscriptionToken = blockAndLogStreamer.subscribeToOnLogRemoved(log => console.log(log));
-const logFilterToken = blockAndLogStreamer.addLogFilter({address: "0xdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef", topics: ["0xbadf00dbadf00dbadf00dbadf00dbadf00dbadf00dbadf00dbadf00dbaadf00d"]});
+const logFilterToken = blockAndLogStreamer.addLogFilter({address: "0xcaa80f0bbe3e5e3b8bb8370bd64a86a2bbfc9c90", topics: ["0xcaa80f0bbe3e5e3b8bb8370bd64a86a2bbfc9c90"]});
 blockAndLogStreamer.reconcileNewBlock(getLatestBlock());
 // you will get a callback for the block and any logs that match the filter here
 triggerBlockMining();
